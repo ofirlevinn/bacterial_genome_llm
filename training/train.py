@@ -169,17 +169,21 @@ def compute_stats_rows(
     bag_files: Iterable[Path], splits: dict[str, set[str]]
 ) -> Iterable[dict[str, object]]:
     for path in bag_files:
-        embeddings, sample_id = load_embeddings(path)
-        mean = embeddings.mean(axis=0)
-        var = embeddings.var(axis=0)
+        mean_embedding, sample_id, variance = load_embeddings(path)
+        if variance is None:
+            raise ValueError(
+                f"Missing embedding_variance attribute in pooled file: {path}"
+            )
         split = assign_split(sample_id, splits)
         row = {
             "sample_id": sample_id,
             "bag_name": path.name,
             "split": split,
         }
-        row.update({f"mean_{i}": float(value) for i, value in enumerate(mean)})
-        row.update({f"var_{i}": float(value) for i, value in enumerate(var)})
+        row.update(
+            {f"mean_{i}": float(value) for i, value in enumerate(mean_embedding)}
+        )
+        row.update({f"var_{i}": float(value) for i, value in enumerate(variance)})
         yield row
 
 
@@ -210,7 +214,7 @@ class LightningRegressor(pl.LightningModule):
         self.target_names = target_names
         self.loss_fn = torch.nn.MSELoss()
 
-    def forward(self, embeddings: list[torch.Tensor]) -> torch.Tensor:
+    def forward(self, embeddings: torch.Tensor) -> torch.Tensor:
         return self.model(embeddings)
 
     def training_step(self, batch, _batch_idx: int):
@@ -262,7 +266,7 @@ def save_predictions(
     rows: list[dict[str, object]] = []
     with torch.inference_mode():
         for embeddings, sample_ids, targets in dataloader:
-            embeddings = [tensor.to(device) for tensor in embeddings]
+            embeddings = embeddings.to(device)
             preds = model(embeddings).cpu().numpy()
             targets_np = targets.cpu().numpy()
             for idx, sample_id in enumerate(sample_ids):
@@ -285,6 +289,7 @@ def main() -> None:
     set_seed(config.training.seed)
 
     bag_files = list_bag_files(config.paths.data_dir)
+    print(f"Found {len(bag_files)} bag files in {config.paths.data_dir}")
     if not bag_files:
         raise SystemExit(f"No .h5 files found in {config.paths.data_dir}")
 
@@ -293,6 +298,7 @@ def main() -> None:
         config.data.sample_id_column,
         config.data.targets,
     )
+    print(f"Loaded metadata for {len(targets_map)} samples from {config.paths.metadata_csv}")
     # Filter bag files to those with metadata targets, and warn if any are dropped
     bag_files = filter_bag_files(bag_files, targets_map)
     if not bag_files:

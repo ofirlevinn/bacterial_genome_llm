@@ -50,7 +50,7 @@ class StepZeroConfig:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Precompute DNABERT-S embeddings for FASTQ bags."
+        description="Precompute mean DNABERT-S embeddings for FASTQ bags."
     )
     parser.add_argument(
         "--config",
@@ -154,8 +154,10 @@ def embed_reads(
     model: AutoModel,
     batch_size: int,
     device: str,
-) -> torch.Tensor:
-    batches: list[torch.Tensor] = []
+) -> tuple[torch.Tensor, torch.Tensor, int]:
+    embedding_sum: torch.Tensor | None = None
+    embedding_sum_squares: torch.Tensor | None = None
+    total_reads = 0
     total_batches = (len(reads) + batch_size - 1) // batch_size
     print(
         f"Embedding {len(reads)} reads in {total_batches} batch(es) "
@@ -167,11 +169,6 @@ def embed_reads(
         for start in range(0, len(reads), batch_size):
             batch_reads = reads[start : start + batch_size]
             batch_index = (start // batch_size) + 1
-            # print(
-            #     f"  Running batch {batch_index}/{total_batches} "
-            #     f"({len(batch_reads)} reads)",
-            #     flush=True,
-            # )
             tokens = tokenizer(
                 batch_reads,
                 padding=True,
@@ -180,21 +177,37 @@ def embed_reads(
             )
             tokens = {key: value.to(device) for key, value in tokens.items()}
             outputs = model(**tokens)
-            batch_embeddings = outputs[0][:, 0, :].detach().cpu()
-            batches.append(batch_embeddings)
+            batch_embeddings = outputs[0][:, 0, :].detach()
+            batch_sum = batch_embeddings.sum(dim=0).cpu()
+            batch_sum_squares = batch_embeddings.pow(2).sum(dim=0).cpu()
+            if embedding_sum is None:
+                embedding_sum = batch_sum
+                embedding_sum_squares = batch_sum_squares
+            else:
+                embedding_sum += batch_sum
+                embedding_sum_squares += batch_sum_squares
+            total_reads += batch_embeddings.shape[0]
 
     print("Finished embedding reads.", flush=True)
-    return torch.cat(batches, dim=0)
+    if (
+        embedding_sum is None
+        or embedding_sum_squares is None
+        or total_reads == 0
+    ):
+        raise ValueError("No read embeddings were produced.")
+    mean_embedding = embedding_sum / total_reads
+    variance_embedding = (embedding_sum_squares / total_reads) - mean_embedding.pow(2)
+    variance_embedding = torch.clamp(variance_embedding, min=0.0)
+    return mean_embedding, variance_embedding, total_reads
 
 
 def parse_sample_id(fastq_path: Path, sample_dir_suffix: str) -> str:
     bag_name = fastq_path.name.replace(".fastq.gz", "")
-    normalized_suffix = sample_dir_suffix.lstrip("-")
-    part_marker = f"-{normalized_suffix}.part_"
+    part_marker = f"{sample_dir_suffix}.part_"
     sample_id, separator, _part_suffix = bag_name.partition(part_marker)
     if not separator or not sample_id:
         raise ValueError(
-            "Expected bag name like '<SampleName>-{sample_dir_suffix}.part_<PartIndex>.fastq.gz', "
+            "Expected bag name like '<SampleName>{sample_dir_suffix}.part_<PartIndex>.fastq.gz', "
             f"got {fastq_path.name}"
         )
     return sample_id
@@ -212,31 +225,48 @@ def build_output_path(
 
 def save_bag_embeddings(
     output_path: Path,
-    embeddings: torch.Tensor,
+    mean_embedding: torch.Tensor,
+    variance_embedding: torch.Tensor,
     sample_id: str,
     source_fastq: Path,
+    num_reads: int,
 ) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     with h5py.File(output_path, "w") as handle:
-        handle.create_dataset("embeddings", data=embeddings.numpy())
+        handle.create_dataset("mean_embedding", data=mean_embedding.numpy())
         handle.attrs["sample_id"] = sample_id
         handle.attrs["source_fastq"] = str(source_fastq)
-        handle.attrs["num_reads"] = embeddings.shape[0]
-        handle.attrs["embedding_dim"] = embeddings.shape[1]
+        handle.attrs["num_reads"] = num_reads
+        handle.attrs["embedding_dim"] = mean_embedding.shape[0]
+        handle.attrs["embedding_variance"] = variance_embedding.numpy()
 
 
-def validate_embeddings(embeddings: torch.Tensor, fastq_path: Path) -> None:
-    if embeddings.ndim != 2:
+def validate_embeddings(
+    mean_embedding: torch.Tensor,
+    variance_embedding: torch.Tensor,
+    fastq_path: Path,
+) -> None:
+    if mean_embedding.ndim != 1:
         raise ValueError(
-            f"Expected 2D embeddings for {fastq_path}, got shape {tuple(embeddings.shape)}"
+            f"Expected 1D mean embedding for {fastq_path}, got shape {tuple(mean_embedding.shape)}"
         )
-    if embeddings.shape[1] != EXPECTED_EMBEDDING_DIM:
+    if mean_embedding.shape[0] != EXPECTED_EMBEDDING_DIM:
         raise ValueError(
-            f"Expected embedding dimension {EXPECTED_EMBEDDING_DIM} for {fastq_path}, got {embeddings.shape[1]}"
+            f"Expected embedding dimension {EXPECTED_EMBEDDING_DIM} for {fastq_path}, got {mean_embedding.shape[0]}"
         )
-    if torch.isnan(embeddings).any():
-        raise ValueError(f"Found NaNs in embeddings for {fastq_path}")
+    if torch.isnan(mean_embedding).any():
+        raise ValueError(f"Found NaNs in mean embedding for {fastq_path}")
+    if variance_embedding.ndim != 1:
+        raise ValueError(
+            f"Expected 1D variance embedding for {fastq_path}, got shape {tuple(variance_embedding.shape)}"
+        )
+    if variance_embedding.shape[0] != EXPECTED_EMBEDDING_DIM:
+        raise ValueError(
+            f"Expected variance dimension {EXPECTED_EMBEDDING_DIM} for {fastq_path}, got {variance_embedding.shape[0]}"
+        )
+    if torch.isnan(variance_embedding).any():
+        raise ValueError(f"Found NaNs in variance embedding for {fastq_path}")
 
 
 def validate_bag_output(output_path: Path, expected_num_reads: int) -> None:
@@ -244,27 +274,25 @@ def validate_bag_output(output_path: Path, expected_num_reads: int) -> None:
         raise FileNotFoundError(f"Expected output file was not created: {output_path}")
 
     with h5py.File(output_path, "r") as handle:
-        if "embeddings" not in handle:
-            raise ValueError(f"Saved output is missing 'embeddings': {output_path}")
+        if "mean_embedding" not in handle:
+            raise ValueError(
+                f"Saved output is missing 'mean_embedding': {output_path}"
+            )
 
-        embeddings = handle["embeddings"]
-        if embeddings.ndim != 2:
+        mean_embedding = handle["mean_embedding"]
+        if mean_embedding.ndim != 1:
             raise ValueError(
-                f"Saved output {output_path} is not a 2D matrix: {embeddings.shape}"
+                f"Saved output {output_path} is not a 1D vector: {mean_embedding.shape}"
             )
-        if embeddings.size == 0:
+        if mean_embedding.size == 0:
             raise ValueError(f"Saved output is empty: {output_path}")
-        if embeddings.shape[0] != expected_num_reads:
+        if mean_embedding.shape[0] != EXPECTED_EMBEDDING_DIM:
             raise ValueError(
-                f"Saved output {output_path} has {embeddings.shape[0]} reads, "
-                f"expected {expected_num_reads}"
-            )
-        if embeddings.shape[1] != EXPECTED_EMBEDDING_DIM:
-            raise ValueError(
-                f"Saved output {output_path} has embedding_dim={embeddings.shape[1]}, expected {EXPECTED_EMBEDDING_DIM}"
+                f"Saved output {output_path} has embedding_dim={mean_embedding.shape[0]}, expected {EXPECTED_EMBEDDING_DIM}"
             )
         saved_num_reads = handle.attrs.get("num_reads")
         saved_embedding_dim = handle.attrs.get("embedding_dim")
+        saved_variance = handle.attrs.get("embedding_variance")
         if saved_num_reads is not None and int(saved_num_reads) != expected_num_reads:
             raise ValueError(
                 f"Saved output {output_path} has num_reads attribute={saved_num_reads}, "
@@ -277,6 +305,14 @@ def validate_bag_output(output_path: Path, expected_num_reads: int) -> None:
             raise ValueError(
                 f"Saved output {output_path} has embedding_dim attribute={saved_embedding_dim}, "
                 f"expected {EXPECTED_EMBEDDING_DIM}"
+            )
+        if saved_variance is None:
+            raise ValueError(
+                f"Saved output {output_path} is missing embedding_variance attribute"
+            )
+        if saved_variance.shape != (EXPECTED_EMBEDDING_DIM,):
+            raise ValueError(
+                f"Saved output {output_path} has embedding_variance shape={saved_variance.shape}, expected ({EXPECTED_EMBEDDING_DIM},)"
             )
 
 
@@ -341,22 +377,24 @@ def run_step_zero(config: StepZeroConfig, fastq_paths: list[Path]) -> None:
         print(f"[{bag_index}/{len(fastq_paths)}] Processing {fastq_path}", flush=True)
         reads = load_all_reads(fastq_path)
         print(f"Loaded {len(reads)} read(s) from {fastq_path.name}", flush=True)
-        embeddings = embed_reads(
+        mean_embedding, variance_embedding, num_reads = embed_reads(
             reads=reads,
             tokenizer=tokenizer,
             model=model,
             batch_size=config.model.batch_size,
             device=config.model.device,
         )
-        validate_embeddings(embeddings, fastq_path)
+        validate_embeddings(mean_embedding, variance_embedding, fastq_path)
         save_bag_embeddings(
             output_path=output_path,
-            embeddings=embeddings,
+            mean_embedding=mean_embedding,
+            variance_embedding=variance_embedding,
             sample_id=parse_sample_id(fastq_path, config.data.sample_dir_suffix),
             source_fastq=fastq_path,
+            num_reads=num_reads,
         )
         validate_bag_output(output_path, expected_num_reads=len(reads))
-        print(f"Saved embeddings to {output_path}", flush=True)
+        print(f"Saved mean embedding to {output_path}", flush=True)
 
     print("Step Zero completed successfully.", flush=True)
 

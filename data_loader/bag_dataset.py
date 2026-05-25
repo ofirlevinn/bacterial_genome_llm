@@ -14,7 +14,7 @@ from torch.utils.data import DataLoader, Dataset
 
 @dataclass(frozen=True)
 class BagSample:
-    embeddings: torch.Tensor
+    mean_embedding: torch.Tensor
     sample_id: str
     targets: torch.Tensor
 
@@ -64,10 +64,11 @@ def filter_bag_files(
     return filtered
 
 
-def load_embeddings(path: Path) -> tuple[np.ndarray, str]:
+def load_embeddings(path: Path) -> tuple[np.ndarray, str, np.ndarray | None]:
     with h5py.File(path, "r") as handle:
-        embeddings = handle["embeddings"][()]
+        mean_embedding = handle["mean_embedding"][()]
         sample_id = handle.attrs.get("sample_id")
+        variance = handle.attrs.get("embedding_variance")
 
     expected_sample_id = parse_sample_id(path)
     if sample_id is None:
@@ -82,7 +83,7 @@ def load_embeddings(path: Path) -> tuple[np.ndarray, str]:
             f"sample_id attribute mismatch in {path}: expected {expected_sample_id}, got {sample_id}"
         )
 
-    return embeddings, sample_id
+    return mean_embedding, sample_id, variance
 
 
 class BagDataset(Dataset[BagSample]):
@@ -99,17 +100,17 @@ class BagDataset(Dataset[BagSample]):
 
     def __getitem__(self, index: int) -> BagSample:
         path = self.bag_files[index]
-        embeddings, sample_id = load_embeddings(path)
+        mean_embedding, sample_id, _variance = load_embeddings(path)
         targets = self.targets_map[sample_id]
         return BagSample(
-            embeddings=torch.from_numpy(embeddings).float(),
+            mean_embedding=torch.from_numpy(mean_embedding).float(),
             sample_id=sample_id,
             targets=torch.tensor(targets, dtype=torch.float32),
         )
 
 
-def collate_bags(batch: list[BagSample]) -> tuple[list[torch.Tensor], list[str], torch.Tensor]:
-    embeddings = [item.embeddings for item in batch]
+def collate_bags(batch: list[BagSample]) -> tuple[torch.Tensor, list[str], torch.Tensor]:
+    embeddings = torch.stack([item.mean_embedding for item in batch], dim=0)
     sample_ids = [item.sample_id for item in batch]
     targets = torch.stack([item.targets for item in batch], dim=0)
     return embeddings, sample_ids, targets
