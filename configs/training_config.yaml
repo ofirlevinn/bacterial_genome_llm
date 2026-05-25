@@ -1,0 +1,29 @@
+paths:
+  data_dir: /home/projects/zeevid/ofirlev/llm/data
+  metadata_csv: /home/projects/zeevid/tomerant/EbG/DocumentsForSubmission/data/metadata/TableS1_total_curated_metadata_and_measurements_of_environmental_parameters.csv
+  results_dir: /home/projects/zeevid/ofirlev/llm/results
+
+data:
+  sample_id_column: UnifiedIndex
+  targets:
+    - Temperature # target column name in metadata csv
+  stats_output:
+
+split:
+  seed: 7
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+
+training:
+  seed: 7 # ?
+  batch_size: 256 # ?
+  num_workers: 2 # ?
+  max_epochs: 20 #?
+  learning_rate: 0.001
+  weight_decay: 0.0 # ?
+  precision: 32 # ?
+
+model:
+  hidden_dim: 256 # ?
+  dropout: 0.1  # ?

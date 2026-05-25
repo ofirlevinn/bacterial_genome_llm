@@ -1,0 +1,15 @@
+paths:
+  output_dir: /home/projects/zeevid/ofirlev/llm/data
+  jobs_dir: /home/projects/zeevid/ofirlev/llm/step_zero/jobs
+
+data:
+  sample_dir_suffix: "R1"
+
+model:
+  pretrained_name: zhihan1996/DNABERT-S
+  batch_size: 128
+  device: cuda
+
+runtime:
+  overwrite: false
+  max_bags: null
