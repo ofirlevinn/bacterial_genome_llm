@@ -1,7 +1,7 @@
 paths:
-  data_dir: /home/projects/zeevid/ofirlev/llm/data/mean
+  data_dir: /home/projects/zeevid/ofirlev/llm/data/mean_dnabert_2
   metadata_csv: /home/projects/zeevid/tomerant/EbG/DocumentsForSubmission/data/metadata/TableS1_total_curated_metadata_and_measurements_of_environmental_parameters.csv
-  results_dir: /home/projects/zeevid/ofirlev/llm/results
+  results_dir: /home/projects/zeevid/ofirlev/llm/results/dnabert_2
 
 data:
   sample_id_column: UnifiedIndex

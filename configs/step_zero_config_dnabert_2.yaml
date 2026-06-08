@@ -1,0 +1,16 @@
+paths:
+  output_dir: /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2
+  jobs_dir: /home/projects/zeevid/ofirlev/llm/step_zero/jobs_dnabert_2
+
+data:
+  sample_dir_suffix: "-R1"
+  output_mode: full
+
+model:
+  pretrained_name: zhihan1996/DNABERT-2-117M
+  batch_size: 128
+  device: cuda
+
+runtime:
+  overwrite: false
+  max_bags: null

@@ -1,9 +1,10 @@
 paths:
-  output_dir: /home/projects/zeevid/ofirlev/llm/data/mean
-  jobs_dir: /home/projects/zeevid/ofirlev/llm/step_zero/jobs
+  output_dir: /home/projects/zeevid/ofirlev/llm/data/mean_dnabert_s
+  jobs_dir: /home/projects/zeevid/ofirlev/llm/step_zero/jobs_dnabert_s
 
 data:
   sample_dir_suffix: "-R1"
+  output_mode: mean
 
 model:
   pretrained_name: zhihan1996/DNABERT-S
