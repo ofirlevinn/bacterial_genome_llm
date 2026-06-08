@@ -14,7 +14,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--jobs-dir",
         type=Path,
-        default=Path("/home/projects/zeevid/ofirlev/llm/step_zero/jobs"),
+        default=Path("/home/projects/zeevid/ofirlev/llm/step_zero/jobs_dnabert_2"),
         help="Directory containing Step Zero job scripts.",
     )
     return parser.parse_args()

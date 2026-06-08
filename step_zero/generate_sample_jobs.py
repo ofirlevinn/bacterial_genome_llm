@@ -7,7 +7,6 @@ LOGS_DIR = Path("/home/projects/zeevid/ofirlev/llm/step_zero/logs")
 QUEUE = "short-gpu"
 GPU_SPEC = "num=1:j_exclusive=yes:gmem=5GB"
 MEMORY = "8GB"
-CONFIG_PATH = Path("/home/projects/zeevid/ofirlev/llm/configs/step_zero_config.yaml")
 
 
 def parse_args() -> argparse.Namespace:
@@ -19,6 +18,13 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=Path("/home/projects/zeevid/ofirlev/llm/step_zero/fastq_paths"),
         help="Directory containing one .txt FASTQ path list per sample.",
+    )
+
+    parser.add_argument(
+        "--config-path",
+        type=Path,
+        default=Path("/home/projects/zeevid/ofirlev/llm/configs/step_zero_config.yaml"),
+        help="Path to YAML config file passed to each generated job.",
     )
     parser.add_argument(
         "--output-dir",
@@ -117,7 +123,7 @@ def main() -> None:
             logs_dir=LOGS_DIR,
             conda_env_prefix=args.conda_env_prefix,
             python_script=args.python_script,
-            config_path=CONFIG_PATH,
+            config_path=args.config_path,
             paths_file=path_file,
             queue=QUEUE,
             gpu_spec=GPU_SPEC,

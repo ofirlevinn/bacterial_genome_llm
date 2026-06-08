@@ -10,4 +10,7 @@
 module load miniconda/4.10.3_environmentally
 
 conda run -p /home/projects/zeevid/ofirlev/miniconda3/envs/dnabert_s \
-python /home/projects/zeevid/ofirlev/llm/step_zero/generate_sample_jobs.py
+
+python /home/projects/zeevid/ofirlev/llm/step_zero/generate_sample_jobs.py \
+--config-path /home/projects/zeevid/ofirlev/llm/configs/step_zero_config_dnabert_2.yaml \
+--output-dir /home/projects/zeevid/ofirlev/llm/step_zero/jobs_dnabert_2/full    
