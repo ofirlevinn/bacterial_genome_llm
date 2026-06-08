@@ -15,6 +15,7 @@ SANITY_PASSED_JOB_PREFIX = "__"
 EXPECTED_BAGS_PER_SAMPLE = 100
 EXPECTED_READS_PER_BAG = 10000
 EXPECTED_EMBEDDING_DIM = 768
+SUPPORTED_OUTPUT_MODES = {"mean", "full"}
 
 
 @dataclass(frozen=True)
@@ -26,6 +27,7 @@ class PathsConfig:
 @dataclass(frozen=True)
 class DataConfig:
     sample_dir_suffix: str
+    output_mode: str
 
 
 @dataclass(frozen=True)
@@ -79,6 +81,7 @@ def load_config(config_path: Path) -> StepZeroConfig:
         ),
         data=DataConfig(
             sample_dir_suffix=str(raw_config["data"]["sample_dir_suffix"]),
+            output_mode=str(raw_config["data"].get("output_mode", "mean")),
         ),
         model=ModelConfig(
             pretrained_name=str(raw_config["model"]["pretrained_name"]),
@@ -94,11 +97,17 @@ def load_config(config_path: Path) -> StepZeroConfig:
         f"output_dir={config.paths.output_dir}, "
         f"jobs_dir={config.paths.jobs_dir}, "
         f"sample_dir_suffix={config.data.sample_dir_suffix}, "
+        f"output_mode={config.data.output_mode}, "
         f"batch_size={config.model.batch_size}, "
         f"device={config.model.device}, "
         f"overwrite={config.runtime.overwrite}",
         flush=True,
     )
+    if config.data.output_mode not in SUPPORTED_OUTPUT_MODES:
+        raise ValueError(
+            f"Unsupported output_mode '{config.data.output_mode}'. "
+            f"Expected one of {sorted(SUPPORTED_OUTPUT_MODES)}."
+        )
     return config
 
 
@@ -154,7 +163,8 @@ def embed_reads(
     model: AutoModel,
     batch_size: int,
     device: str,
-) -> tuple[torch.Tensor, torch.Tensor, int]:
+) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor, int]:
+    all_embeddings: list[torch.Tensor] = []
     embedding_sum: torch.Tensor | None = None
     embedding_sum_squares: torch.Tensor | None = None
     total_reads = 0
@@ -178,6 +188,7 @@ def embed_reads(
             tokens = {key: value.to(device) for key, value in tokens.items()}
             outputs = model(**tokens)
             batch_embeddings = outputs[0][:, 0, :].detach()
+            all_embeddings.append(batch_embeddings.cpu())
             batch_sum = batch_embeddings.sum(dim=0).cpu()
             batch_sum_squares = batch_embeddings.pow(2).sum(dim=0).cpu()
             if embedding_sum is None:
@@ -193,12 +204,14 @@ def embed_reads(
         embedding_sum is None
         or embedding_sum_squares is None
         or total_reads == 0
+        or not all_embeddings
     ):
         raise ValueError("No read embeddings were produced.")
+    read_embeddings = torch.cat(all_embeddings, dim=0)
     mean_embedding = embedding_sum / total_reads
     variance_embedding = (embedding_sum_squares / total_reads) - mean_embedding.pow(2)
     variance_embedding = torch.clamp(variance_embedding, min=0.0)
-    return mean_embedding, variance_embedding, total_reads
+    return read_embeddings, mean_embedding, variance_embedding, total_reads
 
 
 def parse_sample_id(fastq_path: Path, sample_dir_suffix: str) -> str:
@@ -225,6 +238,8 @@ def build_output_path(
 
 def save_bag_embeddings(
     output_path: Path,
+    output_mode: str,
+    read_embeddings: torch.Tensor,
     mean_embedding: torch.Tensor,
     variance_embedding: torch.Tensor,
     sample_id: str,
@@ -234,19 +249,43 @@ def save_bag_embeddings(
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     with h5py.File(output_path, "w") as handle:
-        handle.create_dataset("mean_embedding", data=mean_embedding.numpy())
+        if output_mode == "mean":
+            handle.create_dataset("mean_embedding", data=mean_embedding.numpy())
+            handle.attrs["embedding_variance"] = variance_embedding.numpy()
+            print(
+                f"Saved mean embedding with shape {mean_embedding.shape} to {output_path}",
+                flush=True,
+            )
+        else:
+            handle.create_dataset("read_embeddings", data=read_embeddings.numpy())
+            print(
+                f"Saved full embeddings with shape {read_embeddings.shape} to {output_path}",
+                flush=True,
+            )
+
         handle.attrs["sample_id"] = sample_id
         handle.attrs["source_fastq"] = str(source_fastq)
         handle.attrs["num_reads"] = num_reads
-        handle.attrs["embedding_dim"] = mean_embedding.shape[0]
-        handle.attrs["embedding_variance"] = variance_embedding.numpy()
+        handle.attrs["embedding_dim"] = EXPECTED_EMBEDDING_DIM
+        handle.attrs["output_mode"] = output_mode
 
 
 def validate_embeddings(
+    read_embeddings: torch.Tensor,
     mean_embedding: torch.Tensor,
     variance_embedding: torch.Tensor,
     fastq_path: Path,
 ) -> None:
+    if read_embeddings.ndim != 2:
+        raise ValueError(
+            f"Expected 2D read embeddings for {fastq_path}, got shape {tuple(read_embeddings.shape)}"
+        )
+    if read_embeddings.shape[1] != EXPECTED_EMBEDDING_DIM:
+        raise ValueError(
+            f"Expected read embedding dimension {EXPECTED_EMBEDDING_DIM} for {fastq_path}, got {read_embeddings.shape[1]}"
+        )
+    if torch.isnan(read_embeddings).any():
+        raise ValueError(f"Found NaNs in read embeddings for {fastq_path}")
     if mean_embedding.ndim != 1:
         raise ValueError(
             f"Expected 1D mean embedding for {fastq_path}, got shape {tuple(mean_embedding.shape)}"
@@ -274,25 +313,58 @@ def validate_bag_output(output_path: Path, expected_num_reads: int) -> None:
         raise FileNotFoundError(f"Expected output file was not created: {output_path}")
 
     with h5py.File(output_path, "r") as handle:
-        if "mean_embedding" not in handle:
+        output_mode = str(handle.attrs.get("output_mode", "mean"))
+        if output_mode not in SUPPORTED_OUTPUT_MODES:
             raise ValueError(
-                f"Saved output is missing 'mean_embedding': {output_path}"
+                f"Saved output {output_path} has unsupported output_mode={output_mode}"
             )
 
-        mean_embedding = handle["mean_embedding"]
-        if mean_embedding.ndim != 1:
-            raise ValueError(
-                f"Saved output {output_path} is not a 1D vector: {mean_embedding.shape}"
-            )
-        if mean_embedding.size == 0:
-            raise ValueError(f"Saved output is empty: {output_path}")
-        if mean_embedding.shape[0] != EXPECTED_EMBEDDING_DIM:
-            raise ValueError(
-                f"Saved output {output_path} has embedding_dim={mean_embedding.shape[0]}, expected {EXPECTED_EMBEDDING_DIM}"
-            )
+        if output_mode == "mean":
+            if "mean_embedding" not in handle:
+                raise ValueError(
+                    f"Saved output is missing 'mean_embedding': {output_path}"
+                )
+            mean_embedding = handle["mean_embedding"]
+            if mean_embedding.ndim != 1:
+                raise ValueError(
+                    f"Saved output {output_path} is not a 1D vector: {mean_embedding.shape}"
+                )
+            if mean_embedding.size == 0:
+                raise ValueError(f"Saved output is empty: {output_path}")
+            if mean_embedding.shape[0] != EXPECTED_EMBEDDING_DIM:
+                raise ValueError(
+                    f"Saved output {output_path} has embedding_dim={mean_embedding.shape[0]}, expected {EXPECTED_EMBEDDING_DIM}"
+                )
+            saved_variance = handle.attrs.get("embedding_variance")
+            if saved_variance is None:
+                raise ValueError(
+                    f"Saved output {output_path} is missing embedding_variance attribute"
+                )
+            if saved_variance.shape != (EXPECTED_EMBEDDING_DIM,):
+                raise ValueError(
+                    f"Saved output {output_path} has embedding_variance shape={saved_variance.shape}, expected ({EXPECTED_EMBEDDING_DIM},)"
+                )
+        else:
+            if "read_embeddings" not in handle:
+                raise ValueError(
+                    f"Saved output is missing 'read_embeddings': {output_path}"
+                )
+            read_embeddings = handle["read_embeddings"]
+            if read_embeddings.ndim != 2:
+                raise ValueError(
+                    f"Saved output {output_path} is not a 2D matrix: {read_embeddings.shape}"
+                )
+            if read_embeddings.shape[0] != expected_num_reads:
+                raise ValueError(
+                    f"Saved output {output_path} has num_reads={read_embeddings.shape[0]}, expected {expected_num_reads}"
+                )
+            if read_embeddings.shape[1] != EXPECTED_EMBEDDING_DIM:
+                raise ValueError(
+                    f"Saved output {output_path} has embedding_dim={read_embeddings.shape[1]}, expected {EXPECTED_EMBEDDING_DIM}"
+                )
+
         saved_num_reads = handle.attrs.get("num_reads")
         saved_embedding_dim = handle.attrs.get("embedding_dim")
-        saved_variance = handle.attrs.get("embedding_variance")
         if saved_num_reads is not None and int(saved_num_reads) != expected_num_reads:
             raise ValueError(
                 f"Saved output {output_path} has num_reads attribute={saved_num_reads}, "
@@ -305,14 +377,6 @@ def validate_bag_output(output_path: Path, expected_num_reads: int) -> None:
             raise ValueError(
                 f"Saved output {output_path} has embedding_dim attribute={saved_embedding_dim}, "
                 f"expected {EXPECTED_EMBEDDING_DIM}"
-            )
-        if saved_variance is None:
-            raise ValueError(
-                f"Saved output {output_path} is missing embedding_variance attribute"
-            )
-        if saved_variance.shape != (EXPECTED_EMBEDDING_DIM,):
-            raise ValueError(
-                f"Saved output {output_path} has embedding_variance shape={saved_variance.shape}, expected ({EXPECTED_EMBEDDING_DIM},)"
             )
 
 
@@ -377,16 +441,20 @@ def run_step_zero(config: StepZeroConfig, fastq_paths: list[Path]) -> None:
         print(f"[{bag_index}/{len(fastq_paths)}] Processing {fastq_path}", flush=True)
         reads = load_all_reads(fastq_path)
         print(f"Loaded {len(reads)} read(s) from {fastq_path.name}", flush=True)
-        mean_embedding, variance_embedding, num_reads = embed_reads(
+        read_embeddings, mean_embedding, variance_embedding, num_reads = embed_reads(
             reads=reads,
             tokenizer=tokenizer,
             model=model,
             batch_size=config.model.batch_size,
             device=config.model.device,
         )
-        validate_embeddings(mean_embedding, variance_embedding, fastq_path)
+        validate_embeddings(
+            read_embeddings, mean_embedding, variance_embedding, fastq_path
+        )
         save_bag_embeddings(
             output_path=output_path,
+            output_mode=config.data.output_mode,
+            read_embeddings=read_embeddings,
             mean_embedding=mean_embedding,
             variance_embedding=variance_embedding,
             sample_id=parse_sample_id(fastq_path, config.data.sample_dir_suffix),
@@ -394,7 +462,10 @@ def run_step_zero(config: StepZeroConfig, fastq_paths: list[Path]) -> None:
             num_reads=num_reads,
         )
         validate_bag_output(output_path, expected_num_reads=len(reads))
-        print(f"Saved mean embedding to {output_path}", flush=True)
+        print(
+            f"Saved {config.data.output_mode} embedding output to {output_path}",
+            flush=True,
+        )
 
     print("Step Zero completed successfully.", flush=True)
 
