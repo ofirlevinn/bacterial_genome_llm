@@ -4,7 +4,7 @@ import argparse
 import csv
 import random
 import sys
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Iterable
 
@@ -18,6 +18,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 import pytorch_lightning as pl
 from pytorch_lightning.loggers import CSVLogger
+from pytorch_lightning.loggers import WandbLogger
 
 from data_loader.bag_dataset import (
     BagDataset,
@@ -28,7 +29,7 @@ from data_loader.bag_dataset import (
     load_metadata,
     parse_sample_id,
 )
-from models.mean_pool_mlp import MeanPoolMLP
+from models.mlp import MLP
 
 
 @dataclass(frozen=True)
@@ -71,12 +72,25 @@ class ModelConfig:
 
 
 @dataclass(frozen=True)
+class WandbConfig:
+    enabled: bool
+    project: str
+    save_dir: Path | None
+    name: str | None
+    entity: str | None
+    group: str | None
+    job_type: str | None
+    tags: list[str]
+
+
+@dataclass(frozen=True)
 class TrainConfig:
     paths: PathsConfig
     data: DataConfig
     split: SplitConfig
     training: TrainingConfig
     model: ModelConfig
+    wandb: WandbConfig
 
 
 def parse_args() -> argparse.Namespace:
@@ -130,6 +144,53 @@ def load_config(config_path: Path) -> TrainConfig:
             hidden_dim=int(raw["model"]["hidden_dim"]),
             dropout=float(raw["model"]["dropout"]),
         ),
+        wandb=_load_wandb_config(raw),
+    )
+
+
+def _load_wandb_config(raw: dict[str, object]) -> WandbConfig:
+    wandb_raw = raw.get("wandb", {})
+    if wandb_raw is None:
+        wandb_raw = {}
+    if not isinstance(wandb_raw, dict):
+        raise ValueError("Expected 'wandb' config section to be a mapping.")
+
+    save_dir_value = wandb_raw.get("save_dir")
+    save_dir = (
+        Path(str(save_dir_value)).expanduser()
+        if save_dir_value not in (None, "")
+        else None
+    )
+
+    tags_value = wandb_raw.get("tags", [])
+    if not isinstance(tags_value, list):
+        raise ValueError("Expected 'wandb.tags' to be a list.")
+
+    return WandbConfig(
+        enabled=bool(wandb_raw.get("enabled", True)),
+        project=str(wandb_raw.get("project", "metagenomic-llm")),
+        save_dir=save_dir,
+        name=(
+            str(wandb_raw["name"])
+            if wandb_raw.get("name") not in (None, "")
+            else None
+        ),
+        entity=(
+            str(wandb_raw["entity"])
+            if wandb_raw.get("entity") not in (None, "")
+            else None
+        ),
+        group=(
+            str(wandb_raw["group"])
+            if wandb_raw.get("group") not in (None, "")
+            else None
+        ),
+        job_type=(
+            str(wandb_raw["job_type"])
+            if wandb_raw.get("job_type") not in (None, "")
+            else None
+        ),
+        tags=[str(tag) for tag in tags_value],
     )
 
 
@@ -199,10 +260,54 @@ def save_stats_csv(output_path: Path, rows: Iterable[dict[str, object]]) -> None
         writer.writerows(rows)
 
 
+def build_loggers(config: TrainConfig) -> list[object]:
+    loggers: list[object] = [
+        CSVLogger(
+            save_dir=str(config.paths.results_dir),
+            name="training",
+        )
+    ]
+
+    if not config.wandb.enabled:
+        return loggers
+
+    wandb_save_dir = (
+        config.wandb.save_dir
+        if config.wandb.save_dir is not None
+        else config.paths.results_dir / "wandb"
+    )
+    wandb_logger = WandbLogger(
+        project=config.wandb.project,
+        save_dir=str(wandb_save_dir),
+        name=config.wandb.name,
+        entity=config.wandb.entity,
+        group=config.wandb.group,
+        job_type=config.wandb.job_type,
+        tags=config.wandb.tags,
+        log_model=False,
+    )
+    wandb_logger.experiment.config.update(
+        {
+            "paths": {
+                "data_dir": str(config.paths.data_dir),
+                "metadata_csv": str(config.paths.metadata_csv),
+                "results_dir": str(config.paths.results_dir),
+            },
+            "data": asdict(config.data),
+            "split": asdict(config.split),
+            "training": asdict(config.training),
+            "model": asdict(config.model),
+        },
+        allow_val_change=True,
+    )
+    loggers.append(wandb_logger)
+    return loggers
+
+
 class LightningRegressor(pl.LightningModule):
     def __init__(
         self,
-        model: MeanPoolMLP,
+        model: MLP,
         learning_rate: float,
         weight_decay: float,
         target_names: list[str],
@@ -349,7 +454,7 @@ def main() -> None:
         shuffle=False,
     )
 
-    model = MeanPoolMLP(
+    model = MLP(
         input_dim=768,
         hidden_dim=config.model.hidden_dim,
         output_dim=len(config.data.targets),
@@ -362,14 +467,11 @@ def main() -> None:
         config.data.targets,
     )
 
-    logger = CSVLogger(
-        save_dir=str(config.paths.results_dir),
-        name="training",
-    )
+    loggers = build_loggers(config)
     trainer = pl.Trainer(
         max_epochs=config.training.max_epochs,
         precision=config.training.precision,
-        logger=logger,
+        logger=loggers,
     )
 
     trainer.fit(lightning_module, train_loader, val_loader)

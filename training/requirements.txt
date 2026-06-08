@@ -3,3 +3,4 @@ pandas
 pyyaml
 h5py
 pytorch-lightning
+wandb

@@ -2,7 +2,7 @@
 #BSUB -J "training baseline"
 #BSUB -q long-gpu
 #BSUB -R "span[hosts=1]"
-#BSUB -gpu num=1:j_exclusive=yes:gmem=64GB
+#BSUB -gpu num=1:j_exclusive=yes:gmem=180GB
 #BSUB -R "rusage[mem=64GB]"
 #BSUB -R "affinity[thread*20]"
 #BSUB -oo /home/projects/zeevid/ofirlev/llm/logs/training.out.log
