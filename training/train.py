@@ -67,8 +67,13 @@ class TrainingConfig:
 
 @dataclass(frozen=True)
 class ModelConfig:
+    type: str
     hidden_dim: int
     dropout: float
+    conv_channels: list[int]
+    conv_kernel_sizes: list[int]
+    conv_strides: list[int]
+    conv_paddings: list[int]
 
 
 @dataclass(frozen=True)
@@ -110,6 +115,14 @@ def load_config(config_path: Path) -> TrainConfig:
     with config_path.open("r", encoding="utf-8") as handle:
         raw = yaml.safe_load(handle)
 
+    def _load_int_list(section: dict[str, object], key: str, default: list[int]) -> list[int]:
+        value = section.get(key, default)
+        if value in (None, ""):
+            return default
+        if not isinstance(value, list):
+            raise ValueError(f"Expected '{key}' to be a list of integers.")
+        return [int(item) for item in value]
+
     return TrainConfig(
         paths=PathsConfig(
             data_dir=Path(raw["paths"]["data_dir"]).expanduser(),
@@ -141,8 +154,13 @@ def load_config(config_path: Path) -> TrainConfig:
             precision=int(raw["training"]["precision"]),
         ),
         model=ModelConfig(
+            type=str(raw["model"]["type"]),
             hidden_dim=int(raw["model"]["hidden_dim"]),
             dropout=float(raw["model"]["dropout"]),
+            conv_channels=_load_int_list(raw["model"], "conv_channels", [32, 64, 128, 256]),
+            conv_kernel_sizes=_load_int_list(raw["model"], "conv_kernel_sizes", [5, 5, 3, 3]),
+            conv_strides=_load_int_list(raw["model"], "conv_strides", [2, 2, 2, 2]),
+            conv_paddings=_load_int_list(raw["model"], "conv_paddings", [2, 2, 1, 1]),
         ),
         wandb=_load_wandb_config(raw),
     )
@@ -230,21 +248,17 @@ def compute_stats_rows(
     bag_files: Iterable[Path], splits: dict[str, set[str]]
 ) -> Iterable[dict[str, object]]:
     for path in bag_files:
-        mean_embedding, sample_id, variance = load_embeddings(path)
-        if variance is None:
-            raise ValueError(
-                f"Missing embedding_variance attribute in pooled file: {path}"
-            )
+        tensor, sample_id = load_embeddings(path)
         split = assign_split(sample_id, splits)
         row = {
             "sample_id": sample_id,
             "bag_name": path.name,
             "split": split,
         }
-        row.update(
-            {f"mean_{i}": float(value) for i, value in enumerate(mean_embedding)}
-        )
-        row.update({f"var_{i}": float(value) for i, value in enumerate(variance)})
+        if tensor.ndim == 1:
+            row.update(
+                {f"mean_{i}": float(value) for i, value in enumerate(tensor)}
+            )
         yield row
 
 
@@ -317,7 +331,7 @@ class LightningRegressor(pl.LightningModule):
         self.learning_rate = learning_rate
         self.weight_decay = weight_decay
         self.target_names = target_names
-        self.loss_fn = torch.nn.MSELoss()
+        self.loss_fn = torch.nn.L1Loss()
 
     def forward(self, embeddings: torch.Tensor) -> torch.Tensor:
         return self.model(embeddings)
@@ -326,29 +340,29 @@ class LightningRegressor(pl.LightningModule):
         embeddings, _sample_ids, targets = batch
         preds = self(embeddings)
         loss = self.loss_fn(preds, targets)
-        self.log("train_mse", loss, prog_bar=True)
+        self.log("train_mae", loss, prog_bar=True)
         return loss
 
     def validation_step(self, batch, _batch_idx: int):
         embeddings, _sample_ids, targets = batch
         preds = self(embeddings)
         loss = self.loss_fn(preds, targets)
-        self.log("val_mse", loss, prog_bar=True)
+        self.log("val_mae", loss, prog_bar=True)
         self._log_per_target("val", preds, targets)
 
     def test_step(self, batch, _batch_idx: int):
         embeddings, _sample_ids, targets = batch
         preds = self(embeddings)
         loss = self.loss_fn(preds, targets)
-        self.log("test_mse", loss)
+        self.log("test_mae", loss)
         self._log_per_target("test", preds, targets)
 
     def _log_per_target(
         self, prefix: str, preds: torch.Tensor, targets: torch.Tensor
     ) -> None:
-        per_target_mse = (preds - targets).pow(2).mean(dim=0)
+        per_target_mae = (preds - targets).abs().mean(dim=0)
         for idx, name in enumerate(self.target_names):
-            self.log(f"{prefix}_mse_{name}", per_target_mse[idx])
+            self.log(f"{prefix}_mae_{name}", per_target_mae[idx])
 
     def configure_optimizers(self):
         return torch.optim.Adam(
@@ -418,6 +432,9 @@ def main() -> None:
         config.split.val_ratio,
     )
     splits = {"train": train_ids, "val": val_ids, "test": test_ids}
+    print(f"Train set first 5 sample IDs: {sorted(train_ids)[:5]}")
+    print(f"Validation set first 5 sample IDs: {sorted(val_ids)[:5]}")
+    print(f"Test set first 5 sample IDs: {sorted(test_ids)[:5]}")
 
     if config.data.stats_output:
         stats_rows = compute_stats_rows(bag_files, splits)
@@ -454,12 +471,27 @@ def main() -> None:
         shuffle=False,
     )
 
-    model = MLP(
-        input_dim=768,
-        hidden_dim=config.model.hidden_dim,
-        output_dim=len(config.data.targets),
-        dropout=config.model.dropout,
-    )
+    if config.model.type == "mlp":
+        model = MLP(
+            input_dim=768,
+            hidden_dim=config.model.hidden_dim,
+            output_dim=len(config.data.targets),
+            dropout=config.model.dropout,
+        )
+    elif config.model.type == "cov_cnn":
+        from models.cnn import CovCNNRegressor
+        model = CovCNNRegressor(
+            latent_dim=config.model.hidden_dim,
+            num_targets=len(config.data.targets),
+            conv_channels=config.model.conv_channels,
+            conv_kernel_sizes=config.model.conv_kernel_sizes,
+            conv_strides=config.model.conv_strides,
+            conv_paddings=config.model.conv_paddings,
+            dropout=config.model.dropout,
+        )
+    else:
+        raise ValueError(f"Unsupported model type: {config.model.type}")
+        
     lightning_module = LightningRegressor(
         model,
         config.training.learning_rate,

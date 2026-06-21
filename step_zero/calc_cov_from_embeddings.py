@@ -19,10 +19,16 @@ def parse_args() -> argparse.Namespace:
         help="Directory containing full-embedding .h5 files.",
     )
     parser.add_argument(
-        "--output-dir",
+        "--output_dir",
         type=Path,
         default=None,
         help="Optional output directory. Defaults to sibling <input_dir>_cov.",
+    )
+    parser.add_argument(
+        "--h5_prefix",
+        type=str,
+        default="",
+        help="Optional h5 files prefix filter. If provided, only files starting with this prefix will be processed.",
     )
     return parser.parse_args()
 
@@ -33,13 +39,13 @@ def resolve_output_dir(input_dir: Path, output_dir: Path | None) -> Path:
     return input_dir.parent / f"{input_dir.name}_cov"
 
 
-def list_embedding_files(input_dir: Path) -> list[Path]:
+def list_embedding_files(input_dir: Path, h5_prefix: str | None) -> list[Path]:
     if not input_dir.exists():
         raise FileNotFoundError(f"Input directory does not exist: {input_dir}")
     if not input_dir.is_dir():
         raise NotADirectoryError(f"Input path is not a directory: {input_dir}")
 
-    h5_files = sorted(path for path in input_dir.glob("*.h5") if path.is_file())
+    h5_files = sorted(path for path in input_dir.glob(f"{h5_prefix}*.h5") if path.is_file())
     if not h5_files:
         raise FileNotFoundError(f"No .h5 files found in {input_dir}")
     return h5_files
@@ -92,8 +98,13 @@ def save_covariance(
 def process_file(input_path: Path, output_dir: Path) -> Path:
     read_embeddings = load_read_embeddings(input_path)
     covariance = compute_covariance(read_embeddings)
-
     output_path = output_dir / input_path.name
+
+    # if output_path exists - skip computation and saving
+    if output_path.exists():
+        print(f"Output file {output_path} already exists. Skipping.", flush=True)
+        return output_path
+
     save_covariance(
         output_path=output_path,
         covariance=covariance,
@@ -111,13 +122,15 @@ def main() -> None:
     args = parse_args()
     input_dir = args.input_dir.expanduser()
     output_dir = resolve_output_dir(input_dir, args.output_dir)
+    h5_prefix = args.h5_prefix
+    print(h5_prefix)
 
-    h5_files = list_embedding_files(input_dir)
+    h5_files = list_embedding_files(input_dir, h5_prefix)
     print(
         f"Found {len(h5_files)} embedding file(s) in {input_dir}. Writing to {output_dir}",
         flush=True,
     )
-
+    
     for h5_path in h5_files:
         process_file(h5_path, output_dir)
 

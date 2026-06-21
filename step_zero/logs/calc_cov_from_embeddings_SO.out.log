@@ -1,0 +1,564 @@
+loading ...
+loaded conda.sh
+sh shell detected
+SO
+Found 500 embedding file(s) in /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2. Writing to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_001.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_001.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_002.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_002.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_003.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_003.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_004.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_004.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_005.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_005.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_006.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_006.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_007.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_007.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_008.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_008.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_009.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_009.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_010.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_010.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_011.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_011.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_012.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_012.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_013.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_013.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_014.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_014.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_015.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_015.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_016.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_016.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_017.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_017.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_018.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_018.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_019.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_019.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_020.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_020.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_021.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_021.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_022.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_022.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_023.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_023.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_024.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_024.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_025.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_025.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_026.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_026.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_027.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_027.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_028.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_028.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_029.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_029.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_030.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_030.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_031.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_031.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_032.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_032.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_033.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_033.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_034.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_034.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_035.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_035.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_036.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_036.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_037.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_037.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_038.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_038.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_039.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_039.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_040.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_040.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_041.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_041.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_042.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_042.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_043.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_043.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_044.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_044.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_045.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_045.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_046.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_046.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_047.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_047.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_048.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_048.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_049.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_049.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_050.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_050.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_051.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_051.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_052.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_052.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_053.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_053.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_054.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_054.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_055.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_055.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_056.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_056.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_057.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_057.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_058.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_058.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_059.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_059.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_060.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_060.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_061.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_061.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_062.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_062.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_063.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_063.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_064.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_064.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_065.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_065.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_066.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_066.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_067.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_067.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_068.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_068.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_069.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_069.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_070.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_070.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_071.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_071.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_072.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_072.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_073.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_073.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_074.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_074.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_075.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_075.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_076.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_076.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_077.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_077.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_078.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_078.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_079.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_079.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_080.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_080.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_081.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_081.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_082.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_082.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_083.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_083.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_084.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_084.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_085.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_085.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_086.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_086.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_087.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_087.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_088.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_088.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_089.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_089.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_090.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_090.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_091.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_091.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_092.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_092.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_093.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_093.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_094.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_094.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_095.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_095.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_096.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_096.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_097.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_097.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_098.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_098.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_099.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_099.h5
+Saved covariance matrix (768, 768) for SOAP_004-M-20180530-R1.part_100.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_004-M-20180530-R1.part_100.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_001.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_001.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_002.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_002.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_003.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_003.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_004.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_004.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_005.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_005.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_006.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_006.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_007.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_007.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_008.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_008.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_009.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_009.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_010.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_010.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_011.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_011.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_012.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_012.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_013.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_013.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_014.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_014.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_015.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_015.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_016.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_016.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_017.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_017.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_018.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_018.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_019.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_019.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_020.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_020.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_021.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_021.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_022.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_022.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_023.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_023.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_024.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_024.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_025.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_025.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_026.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_026.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_027.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_027.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_028.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_028.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_029.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_029.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_030.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_030.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_031.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_031.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_032.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_032.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_033.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_033.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_034.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_034.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_035.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_035.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_036.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_036.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_037.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_037.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_038.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_038.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_039.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_039.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_040.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_040.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_041.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_041.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_042.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_042.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_043.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_043.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_044.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_044.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_045.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_045.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_046.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_046.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_047.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_047.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_048.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_048.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_049.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_049.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_050.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_050.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_051.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_051.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_052.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_052.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_053.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_053.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_054.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_054.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_055.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_055.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_056.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_056.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_057.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_057.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_058.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_058.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_059.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_059.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_060.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_060.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_061.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_061.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_062.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_062.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_063.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_063.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_064.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_064.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_065.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_065.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_066.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_066.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_067.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_067.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_068.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_068.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_069.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_069.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_070.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_070.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_071.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_071.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_072.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_072.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_073.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_073.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_074.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_074.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_075.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_075.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_076.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_076.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_077.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_077.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_078.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_078.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_079.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_079.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_080.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_080.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_081.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_081.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_082.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_082.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_083.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_083.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_084.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_084.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_085.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_085.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_086.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_086.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_087.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_087.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_088.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_088.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_089.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_089.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_090.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_090.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_091.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_091.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_092.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_092.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_093.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_093.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_094.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_094.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_095.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_095.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_096.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_096.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_097.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_097.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_098.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_098.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_099.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_099.h5
+Saved covariance matrix (768, 768) for SOAP_005-M-20180529-R1.part_100.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_005-M-20180529-R1.part_100.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_001.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_001.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_002.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_002.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_003.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_003.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_004.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_004.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_005.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_005.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_006.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_006.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_007.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_007.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_008.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_008.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_009.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_009.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_010.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_010.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_011.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_011.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_012.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_012.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_013.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_013.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_014.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_014.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_015.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_015.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_016.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_016.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_017.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_017.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_018.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_018.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_019.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_019.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_020.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_020.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_021.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_021.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_022.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_022.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_023.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_023.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_024.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_024.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_025.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_025.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_026.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_026.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_027.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_027.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_028.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_028.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_029.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_029.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_030.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_030.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_031.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_031.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_032.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_032.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_033.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_033.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_034.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_034.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_035.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_035.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_036.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_036.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_037.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_037.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_038.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_038.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_039.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_039.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_040.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_040.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_041.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_041.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_042.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_042.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_043.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_043.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_044.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_044.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_045.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_045.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_046.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_046.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_047.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_047.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_048.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_048.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_049.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_049.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_050.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_050.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_051.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_051.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_052.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_052.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_053.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_053.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_054.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_054.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_055.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_055.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_056.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_056.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_057.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_057.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_058.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_058.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_059.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_059.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_060.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_060.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_061.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_061.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_062.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_062.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_063.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_063.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_064.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_064.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_065.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_065.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_066.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_066.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_067.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_067.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_068.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_068.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_069.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_069.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_070.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_070.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_071.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_071.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_072.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_072.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_073.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_073.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_074.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_074.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_075.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_075.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_076.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_076.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_077.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_077.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_078.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_078.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_079.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_079.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_080.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_080.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_081.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_081.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_082.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_082.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_083.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_083.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_084.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_084.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_085.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_085.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_086.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_086.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_087.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_087.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_088.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_088.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_089.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_089.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_090.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_090.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_091.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_091.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_092.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_092.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_093.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_093.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_094.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_094.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_095.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_095.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_096.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_096.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_097.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_097.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_098.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_098.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_099.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_099.h5
+Saved covariance matrix (768, 768) for SOAP_031-M-20180531-R1.part_100.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_031-M-20180531-R1.part_100.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_001.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_001.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_002.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_002.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_003.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_003.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_004.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_004.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_005.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_005.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_006.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_006.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_007.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_007.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_008.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_008.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_009.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_009.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_010.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_010.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_011.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_011.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_012.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_012.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_013.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_013.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_014.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_014.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_015.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_015.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_016.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_016.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_017.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_017.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_018.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_018.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_019.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_019.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_020.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_020.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_021.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_021.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_022.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_022.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_023.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_023.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_024.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_024.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_025.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_025.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_026.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_026.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_027.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_027.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_028.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_028.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_029.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_029.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_030.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_030.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_031.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_031.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_032.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_032.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_033.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_033.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_034.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_034.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_035.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_035.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_036.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_036.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_037.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_037.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_038.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_038.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_039.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_039.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_040.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_040.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_041.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_041.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_042.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_042.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_043.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_043.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_044.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_044.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_045.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_045.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_046.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_046.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_047.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_047.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_048.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_048.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_049.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_049.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_050.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_050.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_051.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_051.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_052.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_052.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_053.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_053.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_054.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_054.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_055.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_055.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_056.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_056.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_057.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_057.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_058.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_058.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_059.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_059.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_060.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_060.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_061.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_061.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_062.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_062.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_063.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_063.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_064.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_064.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_065.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_065.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_066.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_066.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_067.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_067.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_068.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_068.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_069.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_069.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_070.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_070.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_071.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_071.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_072.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_072.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_073.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_073.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_074.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_074.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_075.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_075.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_076.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_076.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_077.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_077.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_078.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_078.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_079.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_079.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_080.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_080.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_081.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_081.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_082.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_082.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_083.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_083.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_084.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_084.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_085.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_085.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_086.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_086.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_087.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_087.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_088.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_088.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_089.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_089.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_090.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_090.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_091.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_091.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_092.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_092.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_093.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_093.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_094.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_094.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_095.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_095.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_096.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_096.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_097.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_097.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_098.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_098.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_099.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_099.h5
+Saved covariance matrix (768, 768) for SOAP_043-M-20180531-R1.part_100.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_043-M-20180531-R1.part_100.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_001.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_001.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_002.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_002.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_003.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_003.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_004.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_004.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_005.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_005.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_006.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_006.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_007.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_007.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_008.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_008.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_009.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_009.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_010.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_010.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_011.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_011.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_012.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_012.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_013.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_013.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_014.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_014.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_015.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_015.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_016.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_016.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_017.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_017.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_018.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_018.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_019.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_019.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_020.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_020.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_021.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_021.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_022.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_022.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_023.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_023.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_024.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_024.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_025.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_025.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_026.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_026.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_027.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_027.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_028.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_028.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_029.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_029.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_030.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_030.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_031.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_031.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_032.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_032.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_033.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_033.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_034.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_034.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_035.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_035.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_036.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_036.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_037.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_037.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_038.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_038.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_039.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_039.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_040.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_040.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_041.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_041.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_042.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_042.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_043.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_043.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_044.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_044.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_045.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_045.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_046.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_046.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_047.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_047.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_048.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_048.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_049.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_049.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_050.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_050.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_051.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_051.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_052.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_052.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_053.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_053.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_054.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_054.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_055.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_055.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_056.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_056.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_057.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_057.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_058.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_058.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_059.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_059.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_060.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_060.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_061.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_061.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_062.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_062.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_063.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_063.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_064.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_064.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_065.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_065.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_066.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_066.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_067.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_067.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_068.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_068.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_069.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_069.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_070.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_070.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_071.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_071.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_072.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_072.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_073.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_073.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_074.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_074.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_075.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_075.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_076.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_076.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_077.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_077.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_078.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_078.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_079.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_079.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_080.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_080.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_081.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_081.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_082.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_082.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_083.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_083.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_084.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_084.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_085.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_085.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_086.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_086.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_087.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_087.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_088.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_088.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_089.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_089.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_090.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_090.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_091.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_091.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_092.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_092.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_093.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_093.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_094.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_094.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_095.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_095.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_096.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_096.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_097.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_097.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_098.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_098.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_099.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_099.h5
+Saved covariance matrix (768, 768) for SOAP_045-M-20180530-R1.part_100.h5 to /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2/SOAP_045-M-20180530-R1.part_100.h5
+Finished computing covariance matrices.
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 730765: <compute mean embeddings> in cluster <wexac> Done
+
+Job <compute mean embeddings> was submitted from host <login3> by user <ofirlev> in cluster <wexac> at Mon Jun 15 10:57:33 2026
+Job was executed on host(s) <hgn50>, in queue <short-gpu>, as user <ofirlev> in cluster <wexac> at Mon Jun 15 10:57:34 2026
+</home/projects/zeevid/ofirlev> was used as the home directory.
+</home/projects/zeevid/ofirlev> was used as the working directory.
+Started at Mon Jun 15 10:57:34 2026
+Terminated at Mon Jun 15 11:06:22 2026
+Results reported at Mon Jun 15 11:06:22 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J "compute mean embeddings"
+#BSUB -q short-gpu
+#BSUB -R "span[hosts=1]"
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -R "affinity[thread*20]"
+#BSUB -oo /home/projects/zeevid/ofirlev/llm/step_zero/logs/calc_cov_from_embeddings_SO.out.log
+#BSUB -eo /home/projects/zeevid/ofirlev/llm/step_zero/logs/calc_cov_from_embeddings_SO.err.log
+
+module load miniconda/4.10.3_environmentally
+conda activate /home/projects/zeevid/ofirlev/miniconda3/envs/dnabert_s
+
+export PYTHONUNBUFFERED=1
+
+python -u /home/projects/zeevid/ofirlev/llm/step_zero/calc_cov_from_embeddings.py /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2 --output_dir /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2 \
+--h5_prefix SO
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1118.40 sec.
+    Max Memory :                                 267 MB
+    Average Memory :                             141.10 MB
+    Total Requested Memory :                     8192.00 MB
+    Delta Memory :                               7925.00 MB
+    Max Swap :                                   -
+    Max Processes :                              5
+    Max Threads :                                25
+    Run time :                                   529 sec.
+    Turnaround time :                            529 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </home/projects/zeevid/ofirlev/llm/step_zero/logs/calc_cov_from_embeddings_SO.err.log> for stderr output of this job.
+

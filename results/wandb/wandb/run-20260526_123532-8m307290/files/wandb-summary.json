@@ -1,0 +1,1 @@
+{"val_mse_Temperature":21.76297950744629,"_wandb":{"runtime":5282},"epoch":20,"val_mse":21.76297950744629,"test_mse_Temperature":22.30440330505371,"_step":230,"trainer/global_step":10540,"test_mse":22.30440330505371,"train_mse":21.867948532104492,"_timestamp":1.7797933869940026e+09,"_runtime":5282}

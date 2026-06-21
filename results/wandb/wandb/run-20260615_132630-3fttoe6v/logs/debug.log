@@ -1,0 +1,38 @@
+2026-06-15 13:26:30,690 INFO    MainThread:3738978 [wandb_setup.py:_flush():81] Current SDK version is 0.27.0
+2026-06-15 13:26:30,690 INFO    MainThread:3738978 [wandb_setup.py:_flush():81] Configure stats pid to 3738978
+2026-06-15 13:26:30,690 INFO    MainThread:3738978 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-06-15 13:26:30,690 INFO    MainThread:3738978 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/projects/zeevid/ofirlev/llm/results/wandb/wandb/run-20260615_132630-3fttoe6v/logs/debug.log
+2026-06-15 13:26:30,690 INFO    MainThread:3738978 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/projects/zeevid/ofirlev/llm/results/wandb/wandb/run-20260615_132630-3fttoe6v/logs/debug-internal.log
+2026-06-15 13:26:30,690 INFO    MainThread:3738978 [wandb_init.py:init():851] calling init triggers
+2026-06-15 13:26:30,690 INFO    MainThread:3738978 [wandb_init.py:init():856] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-06-15 13:26:30,690 INFO    MainThread:3738978 [wandb_init.py:init():899] starting backend
+2026-06-15 13:26:31,183 INFO    MainThread:3738978 [wandb_init.py:init():914] sending inform_init request
+2026-06-15 13:26:31,730 INFO    MainThread:3738978 [wandb_init.py:init():919] backend started and connected
+2026-06-15 13:26:31,731 INFO    MainThread:3738978 [wandb_init.py:init():989] updated telemetry
+2026-06-15 13:26:31,740 INFO    MainThread:3738978 [wandb_init.py:init():1012] communicating run to backend with 90.0 second timeout
+2026-06-15 13:26:32,391 INFO    MainThread:3738978 [wandb_init.py:init():1057] starting run threads in backend
+2026-06-15 13:26:32,529 INFO    MainThread:3738978 [wandb_run.py:_console_start():2509] atexit reg
+2026-06-15 13:26:32,529 INFO    MainThread:3738978 [wandb_run.py:_redirect():2359] redirect: wrap_raw
+2026-06-15 13:26:32,529 INFO    MainThread:3738978 [wandb_run.py:_redirect():2428] Wrapping output streams.
+2026-06-15 13:26:32,529 INFO    MainThread:3738978 [wandb_run.py:_redirect():2451] Redirects installed.
+2026-06-15 13:26:32,535 INFO    MainThread:3738978 [wandb_init.py:init():1095] run started, returning control to user process
+2026-06-15 13:26:32,536 INFO    MainThread:3738978 [wandb_run.py:_config_callback():1332] config_cb None None {'paths': {'data_dir': '/home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2', 'metadata_csv': '/home/projects/zeevid/tomerant/EbG/DocumentsForSubmission/data/metadata/TableS1_total_curated_metadata_and_measurements_of_environmental_parameters.csv', 'results_dir': '/home/projects/zeevid/ofirlev/llm/results/cov_dnabert_2'}, 'data': {'sample_id_column': 'UnifiedIndex', 'targets': ['Temperature'], 'stats_output': None}, 'split': {'seed': 7, 'train_ratio': 0.8, 'val_ratio': 0.1, 'test_ratio': 0.1}, 'training': {'seed': 7, 'batch_size': 256, 'num_workers': 2, 'max_epochs': 20, 'learning_rate': 0.001, 'weight_decay': 0.0001, 'precision': 32}, 'model': {'type': 'cov_cnn', 'hidden_dim': 128, 'dropout': 0.1}}
+2026-06-17 08:33:28,325 INFO    wandb-AsyncioManager-main:3738978 [service_client.py:_forward_responses():122] Reached EOF.
+2026-06-17 08:33:28,326 INFO    wandb-AsyncioManager-main:3738978 [mailbox.py:close():154] Closing mailbox, abandoning 2 handles.
+2026-06-17 08:33:28,326 ERROR   wandb-AsyncioManager-main:3738978 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/run_stopping.py", line 87, in loop
+    should_stop = await self._check_should_stop()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/run_stopping.py", line 116, in _check_should_stop
+    result = await handle.wait_async(timeout=None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/mailbox/mailbox_handle.py", line 127, in wait_async
+    response = await self._handle.wait_async(timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/mailbox/response_handle.py", line 123, in wait_async
+    raise HandleAbandonedError()
+wandb.sdk.mailbox.mailbox_handle.HandleAbandonedError

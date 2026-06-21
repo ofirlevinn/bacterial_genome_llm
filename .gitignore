@@ -1,0 +1,4 @@
+
+# Large generated analysis tables
+results/mean_dnabert_2_all_bags/mean_embedding_reductions.csv
+results/mean_dnabert_2_all_bags/mean_embedding_metadata_table.csv

@@ -1,0 +1,60 @@
+base_config: /home/projects/zeevid/ofirlev/llm/configs/training_config_dnabert_2.yaml
+sweep_name: do0.1_lr0.0003_wd0.0001_dnabert_2_cov_cnn_kernels
+
+paths:
+  output_root: /home/projects/zeevid/ofirlev/llm/training/sweeps
+  python_bin: /home/projects/zeevid/ofirlev/.conda/envs/training/bin/python
+  train_script: /home/projects/zeevid/ofirlev/llm/training/train.py
+
+cluster:
+  queue: long-gpu
+  gpu_mem_gb: 128
+  host_mem_gb: 64
+  cpu_threads: 20
+
+wandb:
+  group: do0.1_lr0.0003_wd0.0001_dnabert_2_cov_cnn_kernels
+  job_type: sweep
+  tags:
+    - sweep
+    - cov_cnn
+    - kernel-sweep
+
+fixed_overrides:
+  training:
+    max_epochs: 20
+
+grid:
+  learning_rate:
+    - 0.0003
+  dropout:
+    - 0.1
+  weight_decay:
+    - 0.0001
+  conv_kernel_sizes:
+    - [5, 5, 3, 3]
+    - [3, 3, 3, 3]
+    - [7, 5, 3, 3]
+  conv_strides:
+    - [2, 2, 2, 2]
+    - [1, 2, 2, 2]
+    - [2, 2, 1, 1]
+  conv_paddings:
+    - [2, 2, 1, 1]
+    - [1, 1, 1, 1]
+    - [3, 2, 1, 1]
+
+constraints:
+  include:
+    - conv_kernel_sizes: [5, 5, 3, 3]
+      conv_strides: [2, 2, 2, 2]
+      conv_paddings: [2, 2, 1, 1]
+    - conv_kernel_sizes: [3, 3, 3, 3]
+      conv_strides: [1, 2, 2, 2]
+      conv_paddings: [1, 1, 1, 1]
+    - conv_kernel_sizes: [7, 5, 3, 3]
+      conv_strides: [2, 2, 2, 2]
+      conv_paddings: [3, 2, 1, 1]
+    - conv_kernel_sizes: [5, 5, 3, 3]
+      conv_strides: [2, 2, 1, 1]
+      conv_paddings: [2, 2, 1, 1]

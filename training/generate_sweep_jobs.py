@@ -128,6 +128,8 @@ def load_sweep_spec(path: Path) -> SweepSpec:
 
 
 def format_value(value: object) -> str:
+    if isinstance(value, (list, tuple)):
+        return "-".join(format_value(item) for item in value)
     if isinstance(value, float):
         return f"{value:g}"
     return str(value).replace("/", "_")
@@ -141,6 +143,10 @@ def build_run_name(combo: dict[str, object]) -> str:
             "weight_decay": "wd",
             "dropout": "do",
             "hidden_dim": "hd",
+            "conv_channels": "ch",
+            "conv_kernel_sizes": "ks",
+            "conv_strides": "st",
+            "conv_paddings": "pd",
         }.get(key, key)
         parts.append(f"{key_alias}{format_value(combo[key])}")
     return "_".join(parts)
@@ -187,7 +193,7 @@ def apply_overrides(base_config: dict[str, Any], combo: dict[str, object], spec:
     for key, value in combo.items():
         if key in {"learning_rate", "weight_decay", "batch_size", "max_epochs"}:
             training_section[key] = value
-        elif key in {"dropout", "hidden_dim"}:
+        elif key in {"dropout", "hidden_dim", "conv_channels", "conv_kernel_sizes", "conv_strides", "conv_paddings"}:
             model_section[key] = value
         else:
             raise ValueError(f"Unsupported sweep override key: {key}")

@@ -1,0 +1,1959 @@
+2026-06-09 12:16:17,819 INFO    MainThread:2217057 [wandb_setup.py:_flush():81] Current SDK version is 0.27.0
+2026-06-09 12:16:17,820 INFO    MainThread:2217057 [wandb_setup.py:_flush():81] Configure stats pid to 2217057
+2026-06-09 12:16:17,820 INFO    MainThread:2217057 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-06-09 12:16:17,820 INFO    MainThread:2217057 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/projects/zeevid/ofirlev/llm/results/wandb/wandb/run-20260609_121614-4ac3uzv5/logs/debug.log
+2026-06-09 12:16:17,820 INFO    MainThread:2217057 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/projects/zeevid/ofirlev/llm/results/wandb/wandb/run-20260609_121614-4ac3uzv5/logs/debug-internal.log
+2026-06-09 12:16:17,820 INFO    MainThread:2217057 [wandb_init.py:init():851] calling init triggers
+2026-06-09 12:16:17,820 INFO    MainThread:2217057 [wandb_init.py:init():856] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-06-09 12:16:17,820 INFO    MainThread:2217057 [wandb_init.py:init():899] starting backend
+2026-06-09 12:16:18,320 INFO    MainThread:2217057 [wandb_init.py:init():914] sending inform_init request
+2026-06-09 12:16:20,052 INFO    MainThread:2217057 [wandb_init.py:init():919] backend started and connected
+2026-06-09 12:16:20,053 INFO    MainThread:2217057 [wandb_init.py:init():989] updated telemetry
+2026-06-09 12:16:20,141 INFO    MainThread:2217057 [wandb_init.py:init():1012] communicating run to backend with 90.0 second timeout
+2026-06-09 12:16:20,853 INFO    MainThread:2217057 [wandb_init.py:init():1057] starting run threads in backend
+2026-06-09 12:16:20,957 INFO    MainThread:2217057 [wandb_run.py:_console_start():2509] atexit reg
+2026-06-09 12:16:20,957 INFO    MainThread:2217057 [wandb_run.py:_redirect():2359] redirect: wrap_raw
+2026-06-09 12:16:20,957 INFO    MainThread:2217057 [wandb_run.py:_redirect():2428] Wrapping output streams.
+2026-06-09 12:16:20,957 INFO    MainThread:2217057 [wandb_run.py:_redirect():2451] Redirects installed.
+2026-06-09 12:16:20,963 INFO    MainThread:2217057 [wandb_init.py:init():1095] run started, returning control to user process
+2026-06-09 12:16:20,964 INFO    MainThread:2217057 [wandb_run.py:_config_callback():1332] config_cb None None {'paths': {'data_dir': '/home/projects/zeevid/ofirlev/llm/data/mean_dnabert_2', 'metadata_csv': '/home/projects/zeevid/tomerant/EbG/DocumentsForSubmission/data/metadata/TableS1_total_curated_metadata_and_measurements_of_environmental_parameters.csv', 'results_dir': '/home/projects/zeevid/ofirlev/llm/results/dnabert_2'}, 'data': {'sample_id_column': 'UnifiedIndex', 'targets': ['Temperature'], 'stats_output': None}, 'split': {'seed': 7, 'train_ratio': 0.8, 'val_ratio': 0.1, 'test_ratio': 0.1}, 'training': {'seed': 7, 'batch_size': 256, 'num_workers': 2, 'max_epochs': 20, 'learning_rate': 0.001, 'weight_decay': 0.0001, 'precision': 32}, 'model': {'hidden_dim': 256, 'dropout': 0.1}}
+2026-06-09 13:28:33,501 INFO    wandb-AsyncioManager-main:2217057 [service_client.py:_forward_responses():122] Reached EOF.
+2026-06-09 13:28:33,502 INFO    wandb-AsyncioManager-main:2217057 [mailbox.py:close():154] Closing mailbox, abandoning 1 handles.
+2026-06-09 13:28:33,717 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,718 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,718 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,718 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,718 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,718 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,718 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,719 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,720 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,721 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,722 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,723 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,724 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,724 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,724 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,724 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,724 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,724 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,724 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,724 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,725 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,725 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,725 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,725 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,725 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,726 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,726 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,726 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,726 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,726 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,727 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,727 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,728 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,729 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,729 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,729 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,729 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,730 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,730 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,730 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,730 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,730 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,731 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,731 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,731 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,731 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,731 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,731 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,732 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,732 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,732 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,732 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,732 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,732 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,733 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,733 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,733 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,733 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,733 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,733 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,733 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,733 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,735 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,735 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,736 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,737 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,737 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,737 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,737 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,739 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-06-09 13:28:33,739 ERROR   wandb-AsyncioManager-main:2217057 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 75, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

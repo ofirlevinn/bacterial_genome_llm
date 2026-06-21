@@ -1,0 +1,676 @@
+loading ...
+loaded conda.sh
+sh shell detected
+Loading config from /home/projects/zeevid/ofirlev/llm/configs/step_zero_config_dnabert_2.yaml
+Loaded config: output_dir=/home/projects/zeevid/ofirlev/llm/data/full_dnabert_2, jobs_dir=/home/projects/zeevid/ofirlev/llm/step_zero/jobs_dnabert_2, sample_dir_suffix=-R1, output_mode=full, batch_size=128, device=cuda, overwrite=False
+Loading FASTQ paths from /home/projects/zeevid/ofirlev/llm/step_zero/fastq_paths/SAMN07136664-R1.txt
+Loaded 100 FASTQ path(s).
+Starting Step Zero for 100 bag(s).
+Loading tokenizer and model: zhihan1996/DNABERT-2-117M on device=cuda
+Model device: cuda
+Model loaded and moved to device.
+[1/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_001.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_001.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_001.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_001.h5
+[2/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_002.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_002.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_002.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_002.h5
+[3/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_003.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_003.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_003.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_003.h5
+[4/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_004.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_004.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_004.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_004.h5
+[5/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_005.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_005.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_005.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_005.h5
+[6/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_006.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_006.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_006.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_006.h5
+[7/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_007.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_007.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_007.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_007.h5
+[8/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_008.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_008.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_008.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_008.h5
+[9/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_009.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_009.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_009.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_009.h5
+[10/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_010.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_010.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_010.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_010.h5
+[11/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_011.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_011.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_011.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_011.h5
+[12/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_012.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_012.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_012.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_012.h5
+[13/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_013.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_013.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_013.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_013.h5
+[14/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_014.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_014.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_014.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_014.h5
+[15/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_015.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_015.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_015.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_015.h5
+[16/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_016.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_016.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_016.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_016.h5
+[17/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_017.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_017.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_017.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_017.h5
+[18/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_018.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_018.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_018.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_018.h5
+[19/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_019.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_019.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_019.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_019.h5
+[20/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_020.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_020.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_020.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_020.h5
+[21/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_021.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_021.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_021.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_021.h5
+[22/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_022.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_022.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_022.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_022.h5
+[23/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_023.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_023.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_023.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_023.h5
+[24/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_024.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_024.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_024.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_024.h5
+[25/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_025.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_025.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_025.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_025.h5
+[26/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_026.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_026.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_026.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_026.h5
+[27/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_027.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_027.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_027.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_027.h5
+[28/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_028.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_028.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_028.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_028.h5
+[29/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_029.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_029.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_029.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_029.h5
+[30/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_030.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_030.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_030.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_030.h5
+[31/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_031.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_031.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_031.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_031.h5
+[32/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_032.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_032.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_032.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_032.h5
+[33/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_033.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_033.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_033.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_033.h5
+[34/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_034.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_034.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_034.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_034.h5
+[35/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_035.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_035.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_035.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_035.h5
+[36/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_036.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_036.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_036.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_036.h5
+[37/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_037.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_037.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_037.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_037.h5
+[38/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_038.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_038.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_038.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_038.h5
+[39/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_039.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_039.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_039.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_039.h5
+[40/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_040.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_040.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_040.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_040.h5
+[41/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_041.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_041.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_041.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_041.h5
+[42/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_042.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_042.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_042.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_042.h5
+[43/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_043.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_043.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_043.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_043.h5
+[44/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_044.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_044.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_044.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_044.h5
+[45/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_045.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_045.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_045.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_045.h5
+[46/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_046.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_046.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_046.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_046.h5
+[47/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_047.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_047.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_047.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_047.h5
+[48/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_048.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_048.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_048.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_048.h5
+[49/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_049.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_049.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_049.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_049.h5
+[50/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_050.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_050.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_050.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_050.h5
+[51/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_051.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_051.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_051.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_051.h5
+[52/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_052.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_052.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_052.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_052.h5
+[53/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_053.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_053.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_053.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_053.h5
+[54/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_054.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_054.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_054.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_054.h5
+[55/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_055.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_055.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_055.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_055.h5
+[56/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_056.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_056.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_056.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_056.h5
+[57/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_057.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_057.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_057.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_057.h5
+[58/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_058.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_058.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_058.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_058.h5
+[59/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_059.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_059.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_059.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_059.h5
+[60/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_060.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_060.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_060.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_060.h5
+[61/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_061.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_061.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_061.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_061.h5
+[62/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_062.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_062.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_062.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_062.h5
+[63/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_063.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_063.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_063.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_063.h5
+[64/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_064.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_064.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_064.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_064.h5
+[65/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_065.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_065.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_065.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_065.h5
+[66/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_066.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_066.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_066.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_066.h5
+[67/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_067.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_067.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_067.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_067.h5
+[68/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_068.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_068.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_068.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_068.h5
+[69/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_069.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_069.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_069.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_069.h5
+[70/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_070.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_070.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_070.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_070.h5
+[71/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_071.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_071.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_071.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_071.h5
+[72/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_072.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_072.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_072.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_072.h5
+[73/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_073.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_073.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_073.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_073.h5
+[74/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_074.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_074.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_074.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_074.h5
+[75/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_075.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_075.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_075.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_075.h5
+[76/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_076.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_076.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_076.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_076.h5
+[77/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_077.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_077.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_077.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_077.h5
+[78/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_078.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_078.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_078.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_078.h5
+[79/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_079.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_079.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_079.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_079.h5
+[80/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_080.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_080.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_080.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_080.h5
+[81/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_081.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_081.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_081.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_081.h5
+[82/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_082.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_082.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_082.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_082.h5
+[83/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_083.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_083.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_083.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_083.h5
+[84/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_084.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_084.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_084.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_084.h5
+[85/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_085.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_085.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_085.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_085.h5
+[86/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_086.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_086.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_086.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_086.h5
+[87/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_087.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_087.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_087.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_087.h5
+[88/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_088.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_088.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_088.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_088.h5
+[89/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_089.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_089.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_089.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_089.h5
+[90/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_090.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_090.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_090.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_090.h5
+[91/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_091.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_091.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_091.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_091.h5
+[92/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_092.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_092.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_092.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_092.h5
+[93/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_093.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_093.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_093.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_093.h5
+[94/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_094.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_094.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_094.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_094.h5
+[95/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_095.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_095.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_095.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_095.h5
+[96/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_096.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_096.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_096.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_096.h5
+[97/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_097.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_097.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_097.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_097.h5
+[98/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_098.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_098.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_098.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_098.h5
+[99/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_099.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_099.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_099.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_099.h5
+[100/100] Processing /home/projects/zeevid/Analyses/2023-EbG/EnvDNABERT/10kSubSamples/GEOTRACES/SAMN07136664-R1/SAMN07136664-R1.part_100.fastq.gz
+Loaded 10000 read(s) from SAMN07136664-R1.part_100.fastq.gz
+Embedding 10000 reads in 79 batch(es) with batch_size=128
+Finished embedding reads.
+Saved full embeddings with shape torch.Size([10000, 768]) to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_100.h5
+Saved full embedding output to /home/projects/zeevid/ofirlev/llm/data/full_dnabert_2/SAMN07136664-R1.part_100.h5
+Step Zero completed successfully.
+Running sanity checks for 100 expected bag output(s).
+Sanity checks passed for all bag outputs.
+Renamed job script to /home/projects/zeevid/ofirlev/llm/step_zero/jobs_dnabert_2/__SAMN07136664-R1.sh
+
+------------------------------------------------------------
+Sender: LSF System <DoNotReply>
+Subject: Job 578250: <run SAMN07136664-R1> in cluster <wexac> Done
+
+Job <run SAMN07136664-R1> was submitted from host <login3> by user <ofirlev> in cluster <wexac> at Mon Jun  8 15:22:51 2026
+Job was executed on host(s) <hgn49>, in queue <short-gpu>, as user <ofirlev> in cluster <wexac> at Mon Jun  8 21:47:31 2026
+</home/projects/zeevid/ofirlev> was used as the home directory.
+</home/projects/zeevid/ofirlev/llm> was used as the working directory.
+Started at Mon Jun  8 21:47:31 2026
+Terminated at Mon Jun  8 21:58:53 2026
+Results reported at Mon Jun  8 21:58:53 2026
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -J "run SAMN07136664-R1"
+#BSUB -q short-gpu
+#BSUB -R "span[hosts=1]"
+#BSUB -gpu num=1:j_exclusive=yes:gmem=5GB
+#BSUB -R "rusage[mem=8GB]"
+#BSUB -R "affinity[thread*20]"
+#BSUB -oo /home/projects/zeevid/ofirlev/llm/step_zero/logs/SAMN07136664-R1.out.log
+#BSUB -eo /home/projects/zeevid/ofirlev/llm/step_zero/logs/SAMN07136664-R1.err.log
+
+module load miniconda/4.10.3_environmentally
+conda activate /home/projects/zeevid/ofirlev/miniconda3/envs/dnabert_s
+
+export PYTHONUNBUFFERED=1
+
+python -u /home/projects/zeevid/ofirlev/llm/step_zero/precompute_embeddings.py \
+--config /home/projects/zeevid/ofirlev/llm/configs/step_zero_config_dnabert_2.yaml \
+--paths-file /home/projects/zeevid/ofirlev/llm/step_zero/fastq_paths/SAMN07136664-R1.txt
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   1040.00 sec.
+    Max Memory :                                 831 MB
+    Average Memory :                             764.26 MB
+    Total Requested Memory :                     8192.00 MB
+    Delta Memory :                               7361.00 MB
+    Max Swap :                                   -
+    Max Processes :                              8
+    Max Threads :                                49
+    Run time :                                   682 sec.
+    Turnaround time :                            23762 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </home/projects/zeevid/ofirlev/llm/step_zero/logs/SAMN07136664-R1.err.log> for stderr output of this job.
+

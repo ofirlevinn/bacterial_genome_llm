@@ -1,0 +1,1 @@
+{"val_mae":3.6952061653137207,"test_mae_Temperature":3.526339292526245,"_runtime":12983,"_step":230,"_timestamp":1.7810139838800802e+09,"train_mae":3.6227030754089355,"trainer/global_step":10540,"val_mae_Temperature":3.6952061653137207,"test_mae":3.526339292526245,"_wandb":{"runtime":12983},"epoch":20}

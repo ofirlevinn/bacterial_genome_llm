@@ -12,4 +12,4 @@ export PYTHONUNBUFFERED=1
 export LD_LIBRARY_PATH=/home/projects/zeevid/ofirlev/.conda/envs/training/lib:${LD_LIBRARY_PATH}
 
 /home/projects/zeevid/ofirlev/.conda/envs/training/bin/python -u /home/projects/zeevid/ofirlev/llm/training/train.py \
---config /home/projects/zeevid/ofirlev/llm/configs/training_config.yaml
+--config /home/projects/zeevid/ofirlev/llm/configs/training_config_dnabert_2.yaml

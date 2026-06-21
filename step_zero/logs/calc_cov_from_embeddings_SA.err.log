@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/projects/zeevid/ofirlev/llm/step_zero/calc_cov_from_embeddings.py", line 141, in <module>
+    main()
+  File "/home/projects/zeevid/ofirlev/llm/step_zero/calc_cov_from_embeddings.py", line 135, in main
+    process_file(h5_path, output_dir)
+  File "/home/projects/zeevid/ofirlev/llm/step_zero/calc_cov_from_embeddings.py", line 100, in process_file
+    covariance = compute_covariance(read_embeddings)
+  File "/home/projects/zeevid/ofirlev/llm/step_zero/calc_cov_from_embeddings.py", line 80, in compute_covariance
+    covariance = centered.T @ centered / (read_embeddings.shape[0] - 1)
+KeyboardInterrupt

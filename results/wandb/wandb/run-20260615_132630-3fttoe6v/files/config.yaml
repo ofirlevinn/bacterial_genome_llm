@@ -1,0 +1,99 @@
+_wandb:
+    value:
+        cli_version: 0.27.0
+        e:
+            8y4zj1jstwo2kb9brvj3s8sggdi885yb:
+                args:
+                    - --config
+                    - /home/projects/zeevid/ofirlev/llm/training/sweeps/sweep/configs/do0.1_lr0.001_wd0.0001.yaml
+                codePath: training/train.py
+                codePathLocal: training/train.py
+                cpu_count: 128
+                cpu_count_logical: 128
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "1609826304000"
+                        used: "20900450304"
+                email: levin.ofir@gmail.com
+                executable: /home/projects/zeevid/ofirlev/.conda/envs/training/bin/python
+                git:
+                    commit: 6a0594f61e3bdefc8e2a2c45fdf545a75e631e37
+                    remote: git@github.com:ofirlevinn/bacterial_genome_llm.git
+                gpu: NVIDIA H200
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "150754820096"
+                      name: NVIDIA H200
+                      uuid: GPU-3e9feb2c-3c17-6f0e-a6b4-c6138777f767
+                host: lgn28.wexac.weizmann.ac.il
+                memory:
+                    total: "2434084605952"
+                os: Linux-5.14.0-427.42.1.el9_4.x86_64-x86_64-with-glibc2.34
+                program: /home/projects/zeevid/ofirlev/llm/training/train.py
+                python: CPython 3.11.15
+                root: /home/projects/zeevid/ofirlev/llm/results/wandb
+                startedAt: "2026-06-15T10:26:30.617821Z"
+                writerId: 8y4zj1jstwo2kb9brvj3s8sggdi885yb
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.11.15
+        t:
+            "1":
+                - 1
+                - 9
+                - 103
+            "2":
+                - 1
+                - 9
+                - 103
+            "3":
+                - 7
+                - 13
+                - 15
+                - 66
+            "4": 3.11.15
+            "5": 0.27.0
+            "12": 0.27.0
+            "13": linux-x86_64
+data:
+    value:
+        sample_id_column: UnifiedIndex
+        stats_output: null
+        targets:
+            - Temperature
+model:
+    value:
+        dropout: 0.1
+        hidden_dim: 128
+        type: cov_cnn
+paths:
+    value:
+        data_dir: /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2
+        metadata_csv: /home/projects/zeevid/tomerant/EbG/DocumentsForSubmission/data/metadata/TableS1_total_curated_metadata_and_measurements_of_environmental_parameters.csv
+        results_dir: /home/projects/zeevid/ofirlev/llm/results/cov_dnabert_2
+split:
+    value:
+        seed: 7
+        test_ratio: 0.1
+        train_ratio: 0.8
+        val_ratio: 0.1
+training:
+    value:
+        batch_size: 256
+        learning_rate: 0.001
+        max_epochs: 20
+        num_workers: 2
+        precision: 32
+        seed: 7
+        weight_decay: 0.0001

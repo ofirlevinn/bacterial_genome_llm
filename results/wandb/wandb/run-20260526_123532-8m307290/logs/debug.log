@@ -1,0 +1,22 @@
+2026-05-26 12:35:32,118 INFO    MainThread:3417713 [wandb_setup.py:_flush():81] Current SDK version is 0.27.0
+2026-05-26 12:35:32,118 INFO    MainThread:3417713 [wandb_setup.py:_flush():81] Configure stats pid to 3417713
+2026-05-26 12:35:32,118 INFO    MainThread:3417713 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-26 12:35:32,118 INFO    MainThread:3417713 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/projects/zeevid/ofirlev/llm/results/wandb/wandb/run-20260526_123532-8m307290/logs/debug.log
+2026-05-26 12:35:32,118 INFO    MainThread:3417713 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/projects/zeevid/ofirlev/llm/results/wandb/wandb/run-20260526_123532-8m307290/logs/debug-internal.log
+2026-05-26 12:35:32,118 INFO    MainThread:3417713 [wandb_init.py:init():851] calling init triggers
+2026-05-26 12:35:32,118 INFO    MainThread:3417713 [wandb_init.py:init():856] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-05-26 12:35:32,118 INFO    MainThread:3417713 [wandb_init.py:init():899] starting backend
+2026-05-26 12:35:32,409 INFO    MainThread:3417713 [wandb_init.py:init():914] sending inform_init request
+2026-05-26 12:35:32,857 INFO    MainThread:3417713 [wandb_init.py:init():919] backend started and connected
+2026-05-26 12:35:32,858 INFO    MainThread:3417713 [wandb_init.py:init():989] updated telemetry
+2026-05-26 12:35:32,867 INFO    MainThread:3417713 [wandb_init.py:init():1012] communicating run to backend with 90.0 second timeout
+2026-05-26 12:35:33,636 INFO    MainThread:3417713 [wandb_init.py:init():1057] starting run threads in backend
+2026-05-26 12:35:33,680 INFO    MainThread:3417713 [wandb_run.py:_console_start():2509] atexit reg
+2026-05-26 12:35:33,680 INFO    MainThread:3417713 [wandb_run.py:_redirect():2359] redirect: wrap_raw
+2026-05-26 12:35:33,680 INFO    MainThread:3417713 [wandb_run.py:_redirect():2428] Wrapping output streams.
+2026-05-26 12:35:33,680 INFO    MainThread:3417713 [wandb_run.py:_redirect():2451] Redirects installed.
+2026-05-26 12:35:33,681 INFO    MainThread:3417713 [wandb_init.py:init():1095] run started, returning control to user process
+2026-05-26 12:35:33,682 INFO    MainThread:3417713 [wandb_run.py:_config_callback():1332] config_cb None None {'paths': {'data_dir': '/home/projects/zeevid/ofirlev/llm/data/mean', 'metadata_csv': '/home/projects/zeevid/tomerant/EbG/DocumentsForSubmission/data/metadata/TableS1_total_curated_metadata_and_measurements_of_environmental_parameters.csv', 'results_dir': '/home/projects/zeevid/ofirlev/llm/results'}, 'data': {'sample_id_column': 'UnifiedIndex', 'targets': ['Temperature'], 'stats_output': None}, 'split': {'seed': 7, 'train_ratio': 0.8, 'val_ratio': 0.1, 'test_ratio': 0.1}, 'training': {'seed': 7, 'batch_size': 256, 'num_workers': 2, 'max_epochs': 20, 'learning_rate': 0.0003, 'weight_decay': 1e-05, 'precision': 32}, 'model': {'hidden_dim': 256, 'dropout': 0.1}}
+2026-05-26 14:03:36,551 INFO    wandb-AsyncioManager-main:3417713 [service_client.py:_forward_responses():122] Reached EOF.
+2026-05-26 14:03:36,551 INFO    wandb-AsyncioManager-main:3417713 [mailbox.py:close():154] Closing mailbox, abandoning 1 handles.

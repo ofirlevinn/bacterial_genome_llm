@@ -1,0 +1,41 @@
+data:
+  sample_id_column: UnifiedIndex
+  stats_output: null
+  targets:
+  - Temperature
+model:
+  dropout: 0.1
+  hidden_dim: 128
+  type: cov_cnn
+paths:
+  data_dir: /home/projects/zeevid/ofirlev/llm/data/cov_dnabert_2
+  metadata_csv: /home/projects/zeevid/tomerant/EbG/DocumentsForSubmission/data/metadata/TableS1_total_curated_metadata_and_measurements_of_environmental_parameters.csv
+  results_dir: /home/projects/zeevid/ofirlev/llm/results/cov_dnabert_2
+split:
+  seed: 7
+  test_ratio: 0.1
+  train_ratio: 0.8
+  val_ratio: 0.1
+training:
+  batch_size: 256
+  learning_rate: 0.0003
+  max_epochs: 20
+  num_workers: 2
+  precision: 32
+  seed: 7
+  weight_decay: 1.0e-05
+wandb:
+  enabled: true
+  entity: null
+  group: mlp_baseline_sweep
+  job_type: sweep
+  name: do0.1_lr0.0003_wd1e-05_dnabert_2_cov_cnn
+  project: metagenomic-llm
+  save_dir: /home/projects/zeevid/ofirlev/llm/results/wandb
+  tags:
+  - baseline
+  - cov_cnn
+  - sweep
+  - learning_rate=0.0003
+  - dropout=0.1
+  - weight_decay=1e-05

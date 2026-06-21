@@ -1,0 +1,21 @@
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+💡 Tip: For seamless cloud uploads and versioning, try installing [litmodels](https://pypi.org/project/litmodels/) to enable LitModelCheckpoint, which syncs automatically with the Lightning model registry.
+You are using a CUDA device ('NVIDIA H200') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+  | Name    | Type   | Params | Mode  | FLOPs
+---------------------------------------------------
+0 | model   | MLP    | 197 K  | train | 0
+1 | loss_fn | L1Loss | 0      | train | 0
+---------------------------------------------------
+197 K     Trainable params
+0         Non-trainable params
+197 K     Total params
+0.788     Total estimated model params size (MB)
+7         Modules in train mode
+0         Modules in eval mode
+0         Total Flops
+Epoch 0:  28%|██▊       | 148/527 [03:52<09:54,  0.64it/s, v_num=qfga, train_mae=5.270]
+/home/projects/zeevid/ofirlev/.conda/envs/training/lib/python3.11/site-packages/pytorch_lightning/utilities/data.py:79: Trying to infer the `batch_size` from an ambiguous collection. The batch size we found is 256. To avoid any miscalculations, use `self.log(..., batch_size=batch_size)`.
